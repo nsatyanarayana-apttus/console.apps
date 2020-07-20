@@ -4,3 +4,6 @@
 
 /JsonFile.Compare/.vs/JsonFile.Compare/v16/.suo
 /JsonFile.Compare/JsonFile.Compare/obj
+/JsonFile.Compare/.vs
+/JsonFile.Compare/Console.Apps.Tools/bin/Debug/netcoreapp3.1
+/JsonFile.Compare/Console.Apps.Tools/obj

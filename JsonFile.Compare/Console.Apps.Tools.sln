@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonFile.Compare", "JsonFile.Compare\JsonFile.Compare.csproj", "{140D64A0-0792-4A97-A722-83C97501B415}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Console.Apps.Tools", "Console.Apps.Tools\JsonFile.Compare.csproj", "{140D64A0-0792-4A97-A722-83C97501B415}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
