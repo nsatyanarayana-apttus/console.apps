@@ -7,3 +7,6 @@
 /JsonFile.Compare/.vs
 /JsonFile.Compare/Console.Apps.Tools/bin/Debug/netcoreapp3.1
 /JsonFile.Compare/Console.Apps.Tools/obj
+/Console.Apps.Tools/.vs
+/Console.Apps.Tools/JsonFile.Compare/bin/Debug/netcoreapp3.1
+/Console.Apps.Tools/JsonFile.Compare/obj
