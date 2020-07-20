@@ -19,11 +19,11 @@ namespace ConsoleApp1
 
             ResponseParseService rpservice = new ResponseParseService();
 
-            List<LineItem>  sfdc_lineitems = rpservice.GetSFDCLineItems(sfdc_response);
-            List<LineItem>  ls_lineitems = rpservice.GetLsLineItems(ls_responce);
+            List<LineItem>  sfdc_lineitems = rpservice.GetSFDCLineItems(sfdc_response).Where(x => x.PrimaryLineNumber >= 26 && x.PrimaryLineNumber <= 38).ToList();
+            List<LineItem>  ls_lineitems = rpservice.GetLsLineItems(ls_responce).Where(x => x.PrimaryLineNumber >= 26 && x.PrimaryLineNumber <= 38).ToList();
 
-            List<LineItem> lineitem47 = ls_lineitems.Where(x => x.PrimaryLineNumber >=1 && x.PrimaryLineNumber <= 47).ToList();
-            ls_lineitems = lineitem47;
+            //List<LineItem> lineitem47 = ls_lineitems.Where(x => x.PrimaryLineNumber >=26 && x.PrimaryLineNumber <= 28).ToList();
+            //ls_lineitems = lineitem47;
 
             //Console.WriteLine("Number of lines in sfdc cart : "+sfdc_lineitems.Count);
             //Console.WriteLine("Number of lines in ls   cart : "+ls_lineitems.Count);
@@ -51,6 +51,7 @@ namespace ConsoleApp1
             DisplayService.Display(ls_lineitems, lookup);
             Console.WriteLine("\n");
             //Console.WriteLine("Number of non matching: " + notmatching.Count);
+            Console.WriteLine("------------------done---------------------");
 
             Console.Read();
         }
