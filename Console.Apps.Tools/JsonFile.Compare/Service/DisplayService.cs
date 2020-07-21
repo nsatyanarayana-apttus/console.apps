@@ -2,6 +2,7 @@
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.IO;
 using System.Reflection;
 
@@ -67,9 +68,18 @@ namespace ConsoleApp1.Service
                     lineitems.ForEach(x => {
 
                         string key = x.PriceListItemId + "_" + x.PrimaryLineNumber;
-                        LineItem sfdc = lookup[key];
-                        file.WriteLine(x.Name + space + x.PrimaryLineNumber + space +    x.PriceListItemId  + space + x.CurrencyIsoCode    + space + x.AdjustedPrice + space + x.ChargeType + space + x.DeltaPrice + space + x.ExtendedPrice + space + x.ExtendedQuantity + space + x.Frequency + space + x.NetPrice + space + sfdc.OptionId + space + x.NetUnitPrice + space + x.OptionPrice + space + x.ProductOptionId + space + x.Quantity + space + x.SellingFrequency + space + x.SellingTerm + space + x.SellingUom + space + x.BasePrice + space + x.BasePriceOverride + space + x.AdjustmentType + space + x.AdjustmentAmount + space + x.ListPrice + space + x.BaseExtendedPrice + space + x.NetAdjustmentPercent + space + x.FlatOptionPrice + space + x.GroupAdjustmentPercent + space + x.LineNumber + space + x.ProductId + space + x.LineType + space + x.ParentBundleNumber);
-                        file.WriteLine(sfdc.Name + space + sfdc.PrimaryLineNumber + space + sfdc.PriceListItemId  + space + sfdc.CurrencyIsoCode + space + sfdc.AdjustedPrice + space + sfdc.ChargeType + space + sfdc.DeltaPrice + space + sfdc.ExtendedPrice + space + sfdc.ExtendedQuantity + space + sfdc.Frequency + space + sfdc.NetPrice + space + sfdc.OptionId + space + sfdc.NetUnitPrice + space + sfdc.OptionPrice + space + sfdc.ProductOptionId + space + sfdc.Quantity + space + sfdc.SellingFrequency + space + sfdc.SellingTerm + space + sfdc.SellingUom + space + sfdc.BasePrice + space + sfdc.BasePriceOverride + space + sfdc.AdjustmentType + space + sfdc.AdjustmentAmount + space + sfdc.ListPrice + space + sfdc.BaseExtendedPrice + space + sfdc.NetAdjustmentPercent + space + sfdc.FlatOptionPrice + space + sfdc.GroupAdjustmentPercent + space + sfdc.LineNumber + space + sfdc.ProductId + space + sfdc.LineType + space + x.ParentBundleNumber);
+
+                        if (lookup.ContainsKey(key))
+                        {
+                            LineItem sfdc = lookup[key];
+
+                            if(x.NetPrice.GetValueOrDefault() != sfdc.NetPrice.GetValueOrDefault())
+                            {
+                                file.WriteLine(x.Name + space + x.PrimaryLineNumber + space + x.PriceListItemId + space + x.CurrencyIsoCode + space + x.AdjustedPrice + space + x.ChargeType + space + x.DeltaPrice + space + x.ExtendedPrice + space + x.ExtendedQuantity + space + x.Frequency + space + x.NetPrice + space + sfdc.OptionId + space + x.NetUnitPrice + space + x.OptionPrice + space + x.ProductOptionId + space + x.Quantity + space + x.SellingFrequency + space + x.SellingTerm + space + x.SellingUom + space + x.BasePrice + space + x.BasePriceOverride + space + x.AdjustmentType + space + x.AdjustmentAmount + space + x.ListPrice + space + x.BaseExtendedPrice + space + x.NetAdjustmentPercent + space + x.FlatOptionPrice + space + x.GroupAdjustmentPercent + space + x.LineNumber + space + x.ProductId + space + x.LineType + space + x.ParentBundleNumber);
+                                file.WriteLine(sfdc.Name + space + sfdc.PrimaryLineNumber + space + sfdc.PriceListItemId + space + sfdc.CurrencyIsoCode + space + sfdc.AdjustedPrice + space + sfdc.ChargeType + space + sfdc.DeltaPrice + space + sfdc.ExtendedPrice + space + sfdc.ExtendedQuantity + space + sfdc.Frequency + space + sfdc.NetPrice + space + sfdc.OptionId + space + sfdc.NetUnitPrice + space + sfdc.OptionPrice + space + sfdc.ProductOptionId + space + sfdc.Quantity + space + sfdc.SellingFrequency + space + sfdc.SellingTerm + space + sfdc.SellingUom + space + sfdc.BasePrice + space + sfdc.BasePriceOverride + space + sfdc.AdjustmentType + space + sfdc.AdjustmentAmount + space + sfdc.ListPrice + space + sfdc.BaseExtendedPrice + space + sfdc.NetAdjustmentPercent + space + sfdc.FlatOptionPrice + space + sfdc.GroupAdjustmentPercent + space + sfdc.LineNumber + space + sfdc.ProductId + space + sfdc.LineType + space + x.ParentBundleNumber);
+                            }
+                           
+                        }
                     });
                 }
 

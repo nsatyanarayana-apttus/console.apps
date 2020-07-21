@@ -11,6 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="Data\sobjects.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="Data\ls_response.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
