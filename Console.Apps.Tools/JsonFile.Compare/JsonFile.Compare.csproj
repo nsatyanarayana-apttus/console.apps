@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Apttus.Lightsaber.Pricing.Common" Version="2020.8.0.33" />
+    <PackageReference Include="Apttus.Lightsaber.Pricing.Common" Version="2020.9.0.9" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
