@@ -21,16 +21,33 @@ namespace ServiceA.Controllers
 
 
         [HttpGet]
+        [Route("test1")]
         public async Task<string> Get()
         {
             
-            using (Tracer.BuildSpan("DemoController-"+ HttpContext.TraceIdentifier).StartActive(true))
+            using (Tracer.BuildSpan("DemoController-Get-" + HttpContext.TraceIdentifier).StartActive(true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
                 await ServiceA.GetServiceAMessageAsync(HttpContext.TraceIdentifier);
             }
 
+            Tracer.ActiveSpan.Log("Outside the Span in DemoController");
             return "Hello World";
+        }
+
+        [HttpGet]
+        [Route("test2")]
+        public async Task<string> GetTest2()
+        {
+
+            using (Tracer.BuildSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier).StartActive(true))
+            {
+                Tracer.ActiveSpan.Log("Logged in controller");
+                await ServiceA.GetServiceAMessageAsync(HttpContext.TraceIdentifier);
+            }
+
+            Tracer.ActiveSpan.Log("Outside the Span in DemoController");
+            return "GetTest2";
         }
     }
 }
