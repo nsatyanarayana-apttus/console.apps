@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OpenTracing;
-using ServiceA.Service;
+using ServiceB.Service;
 using System.Threading.Tasks;
 
-namespace ServiceA.Controllers
+namespace ServiceB.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -3,7 +3,7 @@ using OpenTracing;
 using System;
 using System.Threading.Tasks;
 
-namespace ServiceA.Actor
+namespace ServiceB.Actor
 {
     public class WebActor : ReceiveActor
     {

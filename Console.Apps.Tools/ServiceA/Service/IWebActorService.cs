@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace ServiceA.Service
+namespace ServiceB.Service
 {
     public interface IWebActorService
     {

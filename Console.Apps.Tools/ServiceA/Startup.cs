@@ -9,7 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using OpenTracing;
 using OpenTracing.Util;
 using OpenTracing.Contrib.NetCore.CoreFx;
-using ServiceA.Service;
+using ServiceB.Service;
 using System;
 using Microsoft.Extensions.DependencyInjection;
 using Autofac;
@@ -17,11 +17,11 @@ using Autofac.Extensions.DependencyInjection;
 using Akka.Configuration;
 using OurFile = System.IO;
 using Akka.Actor;
-using ServiceA.Actor;
+using ServiceB.Actor;
 using System;
 using Akka.DI.Core;
 
-namespace ServiceA
+namespace ServiceB
 {
     public class Startup
     {

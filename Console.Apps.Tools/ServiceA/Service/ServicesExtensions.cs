@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
-namespace ServiceA.Service
+namespace ServiceB.Service
 {
     public static class ServicesExtensions
     {
