@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using OpenTracing;
 using OpenTracing.Util;
 using OpenTracing.Contrib.NetCore.CoreFx;
+using ServiceA.Service;
 
 
 namespace ServiceA
@@ -51,6 +52,8 @@ namespace ServiceA
             {
                 options.IgnorePatterns.Add(x => !x.RequestUri.IsLoopback);
             });
+
+            services.AddCustomServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

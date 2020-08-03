@@ -35,26 +35,7 @@ namespace ServiceA.Controllers
             return "Hello World";
         }
 
-        private static string[] CallServiceB(int id)
-        {
-            string url = string.Format("{0}{1}", "https://localhost:44310/api/bworld/", id);
-            string[] result = null;
-            HttpClient client = new HttpClient();
-            HttpResponseMessage response = client.GetAsync(url).Result;
-            if (response.IsSuccessStatusCode)
-            {
-                // Parse the response body.
-                string[] b = response.Content.ReadAsAsync<string[]>().Result;
-                //Console.WriteLine(b);
-                result = b ?? null;
-            }
-            else
-            {
-                result = new string[] { response.StatusCode.ToString(), response.ReasonPhrase };
-            }
-            client.Dispose();
-            return result;
-        }
+
 
     }
 }
