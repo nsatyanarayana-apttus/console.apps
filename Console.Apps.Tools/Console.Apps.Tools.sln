@@ -9,8 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncProgram", "AsyncProgra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceA", "ServiceA\ServiceA.csproj", "{CD47420C-C543-436D-A584-7A0FC8C1D73D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceB", "ServiceB\ServiceB.csproj", "{D985926D-CEC1-4BCE-986E-D467B7D5DC3B}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,10 +27,6 @@ Global
 		{CD47420C-C543-436D-A584-7A0FC8C1D73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CD47420C-C543-436D-A584-7A0FC8C1D73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CD47420C-C543-436D-A584-7A0FC8C1D73D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D985926D-CEC1-4BCE-986E-D467B7D5DC3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D985926D-CEC1-4BCE-986E-D467B7D5DC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D985926D-CEC1-4BCE-986E-D467B7D5DC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D985926D-CEC1-4BCE-986E-D467B7D5DC3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
