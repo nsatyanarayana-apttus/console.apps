@@ -11,7 +11,6 @@ using OpenTracing.Util;
 using OpenTracing.Contrib.NetCore.CoreFx;
 using ServiceA.Service;
 
-
 namespace ServiceA
 {
     public class Startup
@@ -54,6 +53,7 @@ namespace ServiceA
             });
 
             services.AddCustomServices();
+            services.AddActorServices();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
