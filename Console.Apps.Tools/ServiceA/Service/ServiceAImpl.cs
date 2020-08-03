@@ -1,4 +1,5 @@
-﻿using OpenTracing;
+﻿using Apttus.OpenTracingTelemetry;
+using OpenTracing;
 using System;
 using System.Threading.Tasks;
 
@@ -6,10 +7,10 @@ namespace ServiceB.Service
 {
     public class ServiceAImpl : IServiceA
     {
-        private ITracer Tracer;
+        private IApttusOpenTracer Tracer;
         private IWebActorService WebActorService;
 
-        public ServiceAImpl(ITracer tracer, IWebActorService webactorservice)
+        public ServiceAImpl(IApttusOpenTracer tracer, IWebActorService webactorservice)
         {
             Tracer = tracer;
             WebActorService = webactorservice;

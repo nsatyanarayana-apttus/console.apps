@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Apttus.OpenTracingTelemetry;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using OpenTracing;
 using ServiceB.Service;
 using System.Threading.Tasks;
 
@@ -10,10 +10,10 @@ namespace ServiceB.Controllers
     [ApiController]
     public class DemoController : ControllerBase
     {
-        private ITracer Tracer;
+        private IApttusOpenTracer Tracer;
         private IServiceA ServiceA;
 
-        public DemoController(ITracer tracer, IServiceA servicea)
+        public DemoController(IApttusOpenTracer tracer, IServiceA servicea)
         {
             Tracer = tracer;
             ServiceA = servicea;

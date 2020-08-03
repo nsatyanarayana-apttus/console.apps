@@ -1,4 +1,5 @@
 ﻿using Akka.Actor;
+using Apttus.OpenTracingTelemetry;
 using OpenTracing;
 using System;
 using System.Threading.Tasks;
@@ -7,9 +8,9 @@ namespace ServiceB.Actor
 {
     public class WebActor : ReceiveActor
     {
-        private ITracer Tracer;
+        private IApttusOpenTracer Tracer;
 
-        public WebActor(ITracer tracer)
+        public WebActor(IApttusOpenTracer tracer)
         {
             Tracer = tracer;
             Receive<string>(msg =>

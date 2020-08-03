@@ -8,18 +8,21 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OpenTracing;
 using OpenTracing.Util;
-using OpenTracing.Contrib.NetCore.CoreFx;
 using ServiceB.Service;
 using System;
-using Microsoft.Extensions.DependencyInjection;
 using Autofac;
 using Autofac.Extensions.DependencyInjection;
 using Akka.Configuration;
 using OurFile = System.IO;
 using Akka.Actor;
 using ServiceB.Actor;
-using System;
 using Akka.DI.Core;
+using Apttus.OpenTracingTelemetry.AspNetCore.Extensions;
+using Apttus.FeatureFlag.Interface;
+using Apttus.FeatureFlag.Implementation;
+using System.Collections.Generic;
+using Apttus.OpenTracingTelemetry;
+using Microsoft.AspNetCore.Http;
 
 namespace ServiceB
 {
@@ -29,37 +32,45 @@ namespace ServiceB
         {
             Configuration = configuration;
         }
-
+        private string SERVICE_NAME = "Tracer TestService";
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddOpenTracing();
+
+            if (Configuration.GetSection("FeatureFlag") != null)
+            {
+                var apiKey = Configuration.GetValue<string>("FeatureFlag:ApiKey");
+
+                services.AddSingleton<IFeatureFlag>(e => { return new LaunchDarklyFeatureFlag(apiKey); });
+            }
+
+            services.AddOpenTracing(SERVICE_NAME, Configuration);
             services.AddTransient<HttpClient>();
 
             // Adds the Jaeger Tracer.
-            services.AddSingleton<ITracer>(serviceProvider =>
-            {
-                string serviceName = serviceProvider.GetRequiredService<IHostingEnvironment>().ApplicationName;
+            //services.AddSingleton<ITracer>(serviceProvider =>
+            //{
+            //    string serviceName = serviceProvider.GetRequiredService<IHostingEnvironment>().ApplicationName;
 
-                // This will log to a default localhost installation of Jaeger.
-                var tracer = new Tracer.Builder(serviceName)
-                    .WithSampler(new ConstSampler(true))
-                    .Build();
+            //    // This will log to a default localhost installation of Jaeger.
+            //    var tracer = new Tracer.Builder(serviceName)
+            //        .WithSampler(new ConstSampler(true))
+            //        .Build();
 
-                // Allows code that can't use DI to also access the tracer.
-                GlobalTracer.Register(tracer);
+            //    // Allows code that can't use DI to also access the tracer.
+            //    GlobalTracer.Register(tracer);
 
-                return tracer;
-            });
+            //    return tracer;
+            //});
 
-            // Prevent endless loops when OpenTracing is tracking HTTP requests to Jaeger.
-            services.Configure<HttpHandlerDiagnosticOptions>(options =>
-            {
-                options.IgnorePatterns.Add(x => !x.RequestUri.IsLoopback);
-            });
+            //// Prevent endless loops when OpenTracing is tracking HTTP requests to Jaeger.
+            //services.Configure<HttpHandlerDiagnosticOptions>(options =>
+            //{
+            //    options.IgnorePatterns.Add(x => !x.RequestUri.IsLoopback);
+            //});
 
             services.AddCustomServices();
             return ConfigureActor(services);
@@ -107,7 +118,33 @@ namespace ServiceB
             }
 
             app.UseHttpsRedirection();
+            app.UseApttusMonitoring(SERVICE_NAME, AdditionalRequestSpanInfo);
             app.UseMvc();
+        }
+
+        private Dictionary<string, string> AdditionalRequestSpanInfo(HttpContext context)
+        {
+            var respDict = new Dictionary<string, string>();
+
+            if (context != null && context.Request != null && context.Request.Headers != null)
+            {
+                if (context.Request.Headers.ContainsKey(Constant.RequestId))
+                {
+                    respDict.Add(Constant.RequestId, context.Request.Headers[Constant.RequestId]);
+                }
+
+                if (context.Request.Headers.ContainsKey(Constant.AppId))
+                {
+                    respDict.Add(Constant.AppId, context.Request.Headers[Constant.AppId]);
+                }
+
+                if (context.Request.Headers.ContainsKey(Constant.TenantId))
+                {
+                    respDict.Add(Constant.TenantId, context.Request.Headers[Constant.TenantId]);
+                }
+            }
+
+            return respDict;
         }
     }
 }
