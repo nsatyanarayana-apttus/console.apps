@@ -28,7 +28,7 @@ namespace ServiceA.Controllers
             using (Tracer.BuildSpan("DemoController-Get-" + HttpContext.TraceIdentifier).StartActive(true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
-                await ServiceA.GetServiceAMessageAsync(HttpContext.TraceIdentifier);
+                await ServiceA.GetServiceAMessageTest1Async(HttpContext.TraceIdentifier);
             }
 
             Tracer.ActiveSpan.Log("Outside the Span in DemoController");
@@ -43,7 +43,22 @@ namespace ServiceA.Controllers
             using (Tracer.BuildSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier).StartActive(true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
-                await ServiceA.GetServiceAMessageAsync(HttpContext.TraceIdentifier);
+                await ServiceA.GetServiceAMessageTest2Async(HttpContext.TraceIdentifier);
+            }
+
+            Tracer.ActiveSpan.Log("Outside the Span in DemoController");
+            return "GetTest2";
+        }
+
+        [HttpGet]
+        [Route("test3")]
+        public async Task<string> GetTest3()
+        {
+
+            using (Tracer.BuildSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier).StartActive(true))
+            {
+                Tracer.ActiveSpan.Log("Logged in controller");
+                await ServiceA.GetServiceAMessageTest3Async(HttpContext.TraceIdentifier);
             }
 
             Tracer.ActiveSpan.Log("Outside the Span in DemoController");
