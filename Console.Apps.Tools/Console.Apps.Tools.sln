@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonFile.Compare", "JsonFile.Compare\JsonFile.Compare.csproj", "{140D64A0-0792-4A97-A722-83C97501B415}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncProgram", "AsyncProgram\AsyncProgram.csproj", "{D98218E6-503B-4EE4-87A4-27B65CB1DE82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsyncProgram", "AsyncProgram\AsyncProgram.csproj", "{D98218E6-503B-4EE4-87A4-27B65CB1DE82}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp", "WebApp\WebApp.csproj", "{C33853AA-189B-4F40-9142-1D43A1CF8412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp", "WebApp\WebApp.csproj", "{C33853AA-189B-4F40-9142-1D43A1CF8412}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
