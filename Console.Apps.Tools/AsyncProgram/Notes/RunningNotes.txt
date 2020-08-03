@@ -1,1 +1,14 @@
 ﻿callbacks, completion events,
+
+The composition of an asynchronous operation followed by synchronous work is an asynchronous operation. Stated another way, if any portion of an operation is asynchronous,
+the entire operation is asynchronous.
+
+
+Tracer constructor is private.
+Tracer object can be built using Builder, for every builder single AsyncLocalScopeManager object exist
+
+
+test AsyncLocalScopeManager manager is singleton or perrequest
+test tracer is singleton or perrequest
+
+test AsyncLocal with multi task
