@@ -15,3 +15,5 @@
 /Console.Apps.Tools/WebApp/bin/Debug/netcoreapp3.1
 /Console.Apps.Tools/WebApp/obj
 
+/Console.Apps.Tools/ServiceA/bin/Debug/netcoreapp2.2
+/Console.Apps.Tools/ServiceA/obj
