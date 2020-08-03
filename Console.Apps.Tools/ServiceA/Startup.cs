@@ -10,6 +10,16 @@ using OpenTracing;
 using OpenTracing.Util;
 using OpenTracing.Contrib.NetCore.CoreFx;
 using ServiceA.Service;
+using System;
+using Microsoft.Extensions.DependencyInjection;
+using Autofac;
+using Autofac.Extensions.DependencyInjection;
+using Akka.Configuration;
+using OurFile = System.IO;
+using Akka.Actor;
+using ServiceA.Actor;
+using System;
+using Akka.DI.Core;
 
 namespace ServiceA
 {
@@ -23,7 +33,7 @@ namespace ServiceA
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services)
+        public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddOpenTracing();
@@ -45,7 +55,6 @@ namespace ServiceA
                 return tracer;
             });
 
-
             // Prevent endless loops when OpenTracing is tracking HTTP requests to Jaeger.
             services.Configure<HttpHandlerDiagnosticOptions>(options =>
             {
@@ -53,7 +62,35 @@ namespace ServiceA
             });
 
             services.AddCustomServices();
-            services.AddActorServices();
+            return ConfigureActor(services);
+        }
+
+        public IServiceProvider ConfigureActor(IServiceCollection services)
+        {
+            // Create and build container
+            var builder = new ContainerBuilder();
+            services.AddAutofac();
+
+            builder.Populate(services);
+
+            var configuration = ConfigurationFactory.ParseString(OurFile.File.ReadAllText("actor.conf"));
+            var customActorSystem = ActorSystem.Create("DemoActor", configuration);
+
+            var lazyActorSys = new Lazy<ActorSystem>(() => { return customActorSystem; });
+            builder.Register<ActorSystem>(x => lazyActorSys.Value).SingleInstance();
+            builder.RegisterType<WebActor>();
+
+            builder.RegisterType<WebActorService>().OnActivating((e) => {
+                var actorSys = e.Context.Resolve<ActorSystem>();
+                var webActorProps = actorSys.DI().Props<WebActor>();
+                var actorRef = actorSys.ActorOf(webActorProps);
+                e.ReplaceInstance(new WebActorService(actorRef));
+            }).As<IWebActorService>().SingleInstance();
+
+            var container = builder.Build();
+            customActorSystem.UseAutofac(container);
+
+            return new AutofacServiceProvider(container);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -8,6 +8,10 @@ namespace ServiceA.Service
     {
         private readonly IActorRef webActorRef;
 
+        public WebActorService()
+        {
+
+        }
         public WebActorService(IActorRef webActor)
         {
             this.webActorRef = webActor;

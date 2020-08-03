@@ -7,10 +7,12 @@ namespace ServiceA.Service
     public class ServiceAImpl : IServiceA
     {
         private ITracer Tracer;
+        private IWebActorService WebActorService;
 
-        public ServiceAImpl(ITracer tracer)
+        public ServiceAImpl(ITracer tracer, IWebActorService webactorservice)
         {
             Tracer = tracer;
+            WebActorService = webactorservice;
         }
 
         public async Task<string> GetServiceAMessageAsync(string id)
