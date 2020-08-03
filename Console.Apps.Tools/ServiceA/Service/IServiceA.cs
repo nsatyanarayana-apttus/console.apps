@@ -7,6 +7,7 @@ namespace ServiceA.Service
 {
     public interface IServiceA
     {
-        Task<string> GetServiceAMessageAsync(string id);
+        Task<string> GetServiceAMessageTest1Async(string id);
+        Task<string> GetServiceAMessageTest2Async(string id);
     }
 }

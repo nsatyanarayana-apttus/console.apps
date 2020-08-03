@@ -9,10 +9,12 @@ namespace ServiceA.Actor
 
         public WebActor(ITracer tracer)
         {
-
+            Tracer = tracer;
             Receive<string>(msg =>
             {
-                Tracer.ActiveSpan.Log(msg);
+                int hashcode = Tracer.GetHashCode();
+                Tracer.ActiveSpan?.Log(msg + hashcode);
+                Sender.Tell("done");
             });
         }
     }

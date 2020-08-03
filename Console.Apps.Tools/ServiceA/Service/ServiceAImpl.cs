@@ -15,7 +15,25 @@ namespace ServiceA.Service
             WebActorService = webactorservice;
         }
 
-        public async Task<string> GetServiceAMessageAsync(string id)
+        public async Task<string> GetServiceAMessageTest1Async(string id)
+        {
+
+            using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan2-" + id).StartActive(true))
+            {
+                Tracer.ActiveSpan.Log("ServiceAImpl before calling inner method");
+                await Task.Delay(TimeSpan.FromSeconds(5));
+                using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan3-" + id).StartActive(true))
+                {
+                    await Task.Delay(TimeSpan.FromSeconds(5));
+                }
+                Tracer.ActiveSpan.Log("ServiceAImpl before calling inner method but within");
+            }
+
+            Tracer.ActiveSpan.Log("Out side Using Blocks -" + id);
+            return "Waited";
+        }
+
+        public async Task<string> GetServiceAMessageTest2Async(string id)
         {
 
             using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan2-" + id).StartActive(true))
@@ -56,6 +74,8 @@ namespace ServiceA.Service
             using (Tracer.BuildSpan("InnerMethod2-ActiveSpan6-" + id).StartActive(true))
             {
                 await Task.Delay(TimeSpan.FromSeconds(5));
+                int hashcode = Tracer.GetHashCode();
+                await WebActorService.Ask<string>("Sending to actor system :"+ hashcode);
                 Tracer.ActiveSpan.Log("InnerMethod2 method");
             }
 
