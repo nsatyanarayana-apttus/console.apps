@@ -1,6 +1,8 @@
 ﻿using Apttus.OpenTracingTelemetry;
 using OpenTracing;
+using ServiceA.Service;
 using System;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ServiceB.Service
@@ -9,6 +11,8 @@ namespace ServiceB.Service
     {
         private IApttusOpenTracer Tracer;
         private IWebActorService WebActorService;
+
+        protected static readonly WaitCallback Executor = t => { ((IRunnable)t).Run(); };
 
         public ServiceAImpl(IApttusOpenTracer tracer, IWebActorService webactorservice)
         {
@@ -70,6 +74,13 @@ namespace ServiceB.Service
             return "Waited";
         }
 
+        public Task<string> ProcessUsingThreadPool(string id)
+        {
+            IRunnable runnable = new MailBox(id);
+            ThreadPool.QueueUserWorkItem(Executor, runnable);
+            return Task.FromResult<string>("done");
+        }
+
         private async Task<string> InnerMethod1(string id)
         {
 
@@ -116,5 +127,7 @@ namespace ServiceB.Service
             Tracer.ActiveSpan.Log("Out side Using Blocks -" + id);
             return "Waited";
         }
+
+
     }
 }

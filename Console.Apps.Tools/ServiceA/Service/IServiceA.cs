@@ -11,5 +11,7 @@ namespace ServiceB.Service
         Task<string> GetServiceAMessageTest2Async(string id);
 
         Task<string> GetServiceAMessageTest3Async(string id);
+
+        Task<string> ProcessUsingThreadPool(string id);
     }
 }

@@ -65,5 +65,21 @@ namespace ServiceB.Controllers
             Tracer.ActiveSpan.Log("Outside the Span in DemoController");
             return "GetTest2";
         }
+
+        [HttpGet]
+        [Route("test4")]
+        public async Task<string> GetTest4()
+        {
+
+
+            using (Tracer.BuildActiveSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier, true))
+            {
+                Tracer.ActiveSpan.Log("Logged in controller");
+                await ServiceA.ProcessUsingThreadPool(HttpContext.TraceIdentifier);
+            }
+
+            Tracer.ActiveSpan.Log("Outside the Span in DemoController");
+            return "GetTest2";
+        }
     }
 }
