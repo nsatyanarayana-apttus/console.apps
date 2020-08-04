@@ -1,7 +1,5 @@
 ﻿using AsyncProgram.Samples;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AsyncProgram
 {
@@ -9,8 +7,12 @@ namespace AsyncProgram
     {
         static void Main(string[] args)
         {
-            AsyncBreakfast ab = new AsyncBreakfast();
+            //AsyncBreakfast ab = new AsyncBreakfast();
             //ab.BreakFastSynchronous();
+
+            AsyncLocalDemo ald = new AsyncLocalDemo();
+            var res = ald.AsyncWaitDemo().GetAwaiter().GetResult();
+            Console.WriteLine(res);
             Console.Read();
         }
     }

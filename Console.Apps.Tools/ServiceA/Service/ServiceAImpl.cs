@@ -19,11 +19,11 @@ namespace ServiceB.Service
         public async Task<string> GetServiceAMessageTest1Async(string id)
         {
 
-            using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan2-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan2-" + id,true))
             {
                 Tracer.ActiveSpan.Log("ServiceAImpl before calling inner method");
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan3-" + id).StartActive(true))
+                using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan3-" + id,true))
                 {
                     await Task.Delay(TimeSpan.FromSeconds(5));
                 }
@@ -37,11 +37,11 @@ namespace ServiceB.Service
         public async Task<string> GetServiceAMessageTest2Async(string id)
         {
 
-            using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan2-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan2-" + id,true))
             {
                 Tracer.ActiveSpan.Log("ServiceAImpl before calling inner method");
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan3-" + id).StartActive(true))
+                using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan3-" + id,true))
                 {
                     await InnerMethod1(id);
                 }
@@ -55,11 +55,11 @@ namespace ServiceB.Service
         public async Task<string> GetServiceAMessageTest3Async(string id)
         {
 
-            using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan2-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan2-" + id,true))
             {
                 Tracer.ActiveSpan.Log("ServiceAImpl before calling inner method");
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                using (Tracer.BuildSpan("GetServiceAMessageAsync-ActiveSpan3-" + id).StartActive(true))
+                using (Tracer.BuildActiveSpan("GetServiceAMessageAsync-ActiveSpan3-" + id,true))
                 {
                     await InnerMethod3(id);
                 }
@@ -73,10 +73,10 @@ namespace ServiceB.Service
         private async Task<string> InnerMethod1(string id)
         {
 
-            using (Tracer.BuildSpan("InnerMethod1--ActiveSpan4-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("InnerMethod1--ActiveSpan4-" + id,true))
             {
                 await Task.Delay(TimeSpan.FromSeconds(5));
-                using (Tracer.BuildSpan("InnerMethod1-ActiveSpan5-" + id).StartActive(true))
+                using (Tracer.BuildActiveSpan("InnerMethod1-ActiveSpan5-" + id,true))
                 {
                     await InnerMethod2(id);
                 }
@@ -90,7 +90,7 @@ namespace ServiceB.Service
         private async Task<string> InnerMethod2(string id)
         {
 
-            using (Tracer.BuildSpan("InnerMethod2-ActiveSpan6-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("InnerMethod2-ActiveSpan6-" + id,true))
             {
                 await Task.Delay(TimeSpan.FromSeconds(5));
                 int hashcode = Tracer.GetHashCode();
@@ -105,7 +105,7 @@ namespace ServiceB.Service
         private async Task<string> InnerMethod3(string id)
         {
 
-            using (Tracer.BuildSpan("InnerMethod2-ActiveSpan6-" + id).StartActive(true))
+            using (Tracer.BuildActiveSpan("InnerMethod2-ActiveSpan6-" + id,true))
             {
                 await Task.Delay(TimeSpan.FromSeconds(5));
                 int hashcode = Tracer.GetHashCode();

@@ -25,7 +25,7 @@ namespace ServiceB.Controllers
         public async Task<string> Get()
         {
             
-            using (Tracer.BuildSpan("DemoController-Get-" + HttpContext.TraceIdentifier).StartActive(true))
+            using (Tracer.BuildActiveSpan("DemoController-Get-" + HttpContext.TraceIdentifier,true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
                 await ServiceA.GetServiceAMessageTest1Async(HttpContext.TraceIdentifier);
@@ -40,7 +40,7 @@ namespace ServiceB.Controllers
         public async Task<string> GetTest2()
         {
 
-            using (Tracer.BuildSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier).StartActive(true))
+            using (Tracer.BuildActiveSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier,true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
                 await ServiceA.GetServiceAMessageTest2Async(HttpContext.TraceIdentifier);
@@ -55,7 +55,8 @@ namespace ServiceB.Controllers
         public async Task<string> GetTest3()
         {
 
-            using (Tracer.BuildSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier).StartActive(true))
+            
+            using (Tracer.BuildActiveSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier,true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
                 await ServiceA.GetServiceAMessageTest3Async(HttpContext.TraceIdentifier);
