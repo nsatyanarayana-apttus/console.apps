@@ -2,6 +2,7 @@
 using OpenTracing;
 using ServiceA.Service;
 using System;
+using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -128,6 +129,23 @@ namespace ServiceB.Service
             return "Waited";
         }
 
+        public Task<string> SendToSockerServer(string id)
+        {
 
+            int hashcode = (int)ApttusGlobalTracer.Current?.GetHashCode();
+            TcpClient client = new TcpClient();
+            //Connect to the server
+            client.Connect("localhost", 5053);
+
+            String str = "Hello world";
+
+            //Get the network stream
+            NetworkStream stream = client.GetStream();
+            //Converting string to byte array
+            byte[] bytesToSend = System.Text.Encoding.ASCII.GetBytes(str);
+            //Sending the byte array to the server
+            client.Client.Send(bytesToSend);
+            return Task.FromResult<string>(id);
+        }
     }
 }

@@ -13,5 +13,7 @@ namespace ServiceB.Service
         Task<string> GetServiceAMessageTest3Async(string id);
 
         Task<string> ProcessUsingThreadPool(string id);
+
+        Task<string> SendToSockerServer(string id);
     }
 }

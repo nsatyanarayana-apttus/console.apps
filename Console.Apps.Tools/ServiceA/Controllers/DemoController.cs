@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServiceB.Service;
+using System;
+using System.Net.Sockets;
 using System.Threading.Tasks;
 
 namespace ServiceB.Controllers
@@ -81,5 +83,21 @@ namespace ServiceB.Controllers
             Tracer.ActiveSpan.Log("Outside the Span in DemoController");
             return "GetTest2";
         }
+
+        [HttpGet]
+        [Route("test5")]
+        public async Task<string> GetTest5()
+        {
+            using (Tracer.BuildActiveSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier, true))
+            {
+                Tracer.ActiveSpan.Log("Logged in controller");
+                await ServiceA.SendToSockerServer(HttpContext.TraceIdentifier);
+            }
+
+            Tracer.ActiveSpan.Log("Outside the Span in DemoController");
+            return "GetTest5";
+        }
+
+       
     }
 }
