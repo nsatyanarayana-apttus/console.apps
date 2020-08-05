@@ -24,10 +24,12 @@ namespace ServiceB.Service
         public Task<T> Ask<T>(object message, TimeSpan? timeout = null)
         {
             bool f1 = ExecutionContext.IsFlowSuppressed();
-            int hashcode = (int)WebActor.Tracer1?.ActiveSpan?.GetHashCode();
+            //int hashcode = (int)WebActor.Tracer1?.ActiveSpan?.GetHashCode();
+            //int hashcode = (int)WebActor.Tracer1?.ActiveSpan?.GetHashCode();
             var task1= webActorRef.Ask<T>(message, timeout);
-             hashcode = (int)ApttusGlobalTracer.Current?.GetHashCode();
-            ApttusGlobalTracer.Current?.ActiveSpan?.Log(hashcode+"");
+            // hashcode = (int)ApttusGlobalTracer.Current?.GetHashCode();
+            //ApttusGlobalTracer.Current?.ActiveSpan?.Log("ggggg");
+            //return Task.FromResult<T>(default(T));
             return task1;
         }
     }

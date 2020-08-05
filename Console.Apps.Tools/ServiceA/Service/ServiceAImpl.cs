@@ -145,6 +145,7 @@ namespace ServiceB.Service
             byte[] bytesToSend = System.Text.Encoding.ASCII.GetBytes(str);
             //Sending the byte array to the server
             client.Client.Send(bytesToSend);
+
             return Task.FromResult<string>(id);
         }
     }

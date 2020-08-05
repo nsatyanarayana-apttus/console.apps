@@ -75,7 +75,7 @@ namespace ServiceB
             //    options.IgnorePatterns.Add(x => !x.RequestUri.IsLoopback);
             //});
 
-            AddSocketServer();
+            //AddSocketServer();
             services.AddCustomServices();
             
             return ConfigureActor(services);

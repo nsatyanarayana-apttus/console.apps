@@ -1,6 +1,5 @@
 ﻿using Akka.Actor;
 using Apttus.OpenTracingTelemetry;
-using OpenTracing.Util;
 using System;
 using System.Threading.Tasks;
 
@@ -15,7 +14,7 @@ namespace ServiceB.Actor
         public WebActor(IApttusOpenTracer tracer)
         {
             Tracer = tracer;
-            Tracer1 = tracer;
+           // Tracer1 = tracer;
             Receive<string>(msg =>
             {
                 int hashcode = Tracer.GetHashCode();
@@ -25,13 +24,13 @@ namespace ServiceB.Actor
 
             Receive<int>(msg =>
             {
-                int hashcode = (int)ApttusGlobalTracer.Current?.GetHashCode();
+                //int hashcode = (int)ApttusGlobalTracer.Current?.GetHashCode();
                 using (Tracer.BuildActiveSpan("WebActor-ActiveSpan6-" + msg,true))
                 {
                     Task.Delay(TimeSpan.FromSeconds(5)).GetAwaiter().GetResult();
                 }
                 Tracer.ActiveSpan?.Log("WebActor-ActiveSpan6");
-                Sender.Tell(hashcode);
+                Sender.Tell(12345);
             });
         }
     }

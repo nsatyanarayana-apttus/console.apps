@@ -1,4 +1,5 @@
-﻿using Apttus.OpenTracingTelemetry;
+﻿using Akka.Actor;
+using Apttus.OpenTracingTelemetry;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ServiceB.Service;
@@ -14,11 +15,13 @@ namespace ServiceB.Controllers
     {
         private IApttusOpenTracer Tracer;
         private IServiceA ServiceA;
+        private IWebActorService WebActorService;
 
-        public DemoController(IApttusOpenTracer tracer, IServiceA servicea)
+        public DemoController(IApttusOpenTracer tracer, IServiceA servicea, IWebActorService webActorservice)
         {
             Tracer = tracer;
             ServiceA = servicea;
+            WebActorService = webActorservice;
         }
 
 
@@ -61,7 +64,8 @@ namespace ServiceB.Controllers
             using (Tracer.BuildActiveSpan("GetTest2-ActiveSpan1-" + HttpContext.TraceIdentifier,true))
             {
                 Tracer.ActiveSpan.Log("Logged in controller");
-                await ServiceA.GetServiceAMessageTest3Async(HttpContext.TraceIdentifier);
+                //await ServiceA.GetServiceAMessageTest3Async(HttpContext.TraceIdentifier);
+                await WebActorService.Ask<string>("hello world");
             }
 
             Tracer.ActiveSpan.Log("Outside the Span in DemoController");
