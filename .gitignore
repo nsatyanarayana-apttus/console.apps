@@ -17,3 +17,6 @@
 
 /Console.Apps.Tools/ServiceA/bin/Debug/netcoreapp2.2
 /Console.Apps.Tools/ServiceA/obj
+/QuartzPoc/obj
+/QuartzPoc/bin
+/QuartzPoc/.vs/QuartzPoc/v16/TestStore/0
