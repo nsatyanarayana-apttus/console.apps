@@ -23,3 +23,6 @@
 /QuartzPoc/.vs/QuartzPoc
 /SchedularPoc/.vs/SchedularPoc/v16
 /SchedularPoc/obj
+/SchedularPoc/.vs/SchedularPoc/config
+/SchedularPoc/bin/Debug/netcoreapp3.1
+*.user
