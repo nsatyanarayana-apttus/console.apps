@@ -26,3 +26,6 @@
 /SchedularPoc/.vs/SchedularPoc/config
 /SchedularPoc/bin/Debug/netcoreapp3.1
 *.user
+/Service/.vs/Service
+/Service/bin/Debug/netcoreapp3.1
+/Service/obj
