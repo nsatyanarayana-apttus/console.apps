@@ -29,3 +29,7 @@
 /Service/.vs/Service
 /Service/bin/Debug/netcoreapp3.1
 /Service/obj
+/MongoDb/.vs/MongoDb/v16
+/MongoDb/obj
+/MongoDb/bin/Debug/netcoreapp3.1
+/SchedularPoc/.vs/SchedularPoc/DesignTimeBuild/.dtbcache.v2
