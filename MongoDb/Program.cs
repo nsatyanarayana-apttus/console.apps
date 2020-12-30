@@ -1,5 +1,7 @@
-﻿using MongoDB.Driver;
+﻿using MongoDb.Tools;
 using System;
+using System.IO;
+using System.Reflection;
 
 namespace MongoDb
 {
@@ -9,19 +11,16 @@ namespace MongoDb
         {
             Console.WriteLine("Hello World!");
 
-            string cs = "mongodb://root:Apttu#cms#engg#123@ussc-cms-eng-mdb-dev-01.apttuscloud.io:27017,ussc-cms-eng-mdb-dev-03.apttuscloud.io:27017,ussc-cms-eng-mdb-dev-02.apttuscloud.io:27017/?authSource=admin&replicaSet=replicaset&readPreference=primary&appname=MongoDB Compass&ssl=false";
-            //MongoClient dbClient = new MongoClient("mongodb://root:Apttu%23cms%23engg%23123@ussc-cms-eng-mdb-dev-01.apttuscloud.io:27017,ussc-cms-eng-mdb-dev-03.apttuscloud.io:27017,ussc-cms-eng-mdb-dev-02.apttuscloud.io:27017/?authSource=admin&replicaSet=replicaset&readPreference=primary&appname=MongoDB%20Compass&ssl=false");
-            MongoClient dbClient = new MongoClient(cs);
 
-            var dbList = dbClient.ListDatabases().ToList();
+            string sql = "Select Id,Name,Apttus_Config2__ProductId__c, Apttus_Config2__OptionGroupId__r.Name, Apttus_Config2__OptionGroupId__r.Apttus_Config2__Label__c, Apttus_Config2__OptionGroupId__r.Apttus_Config2__Description__c, Apttus_Config2__OptionGroupId__c, Apttus_Config2__ParentOptionGroupId__c, Apttus_Config2__RootOptionGroupId__c, Apttus_Config2__RootSequence__c, Apttus_Config2__IsHidden__c, Apttus_Config2__IsLeaf__c, Apttus_Config2__MinOptions__c, Apttus_Config2__MaxOptions__c, Apttus_Config2__MinTotalQuantity__c, Apttus_Config2__MaxTotalQuantity__c, Apttus_Config2__MinTotalQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__MaxTotalQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__ModifiableType__c, Apttus_Config2__Sequence__c, Apttus_Config2__IsPicklist__c, Apttus_Config2__ContentType__c,Apttus_Config2__ProductAttributeGroupMemberId__r.Apttus_Config2__AttributeGroupId__c from Apttus_Config2__ProductOptionGroup__c where Apttus_Config2__ProductId__c in ('01t2D000003tTUkQAM') Order By Apttus_Config2__ParentOptionGroupId__c";
 
-            Console.WriteLine("The list of databases on this server is: ");
-            foreach (var db in dbList)
-            {
-                Console.WriteLine(db);
-            }
+            //SqlParser sqlParser = new SqlParser();
 
-            Console.ReadLine();
+            //Console.WriteLine(sqlParser.ParseSql(sql));
+            JsonParser jp = new JsonParser();
+            jp.ReadJson(null);
+
+           Console.ReadLine();
         }
     }
 }
