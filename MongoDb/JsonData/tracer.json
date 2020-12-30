@@ -1,0 +1,2949 @@
+{
+  "data": [
+    {
+      "traceID": "1d748764181521c4",
+      "spans": [
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "0f2ee7f30d01720a",
+          "flags": 1,
+          "operationName": "publishFormulaFields",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "fa3b4b9ed505107f"
+            }
+          ],
+          "startTime": 1609310998946077,
+          "duration": 5065069,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609310998946090,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing publishFormulaFields."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310998946112,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getFormulaFieldForProposal"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310998946119,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Query to Formula Field Proposal : sobjects/Apttus_Config2__LineItem__c/describe"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311001753319,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getFormulaFieldForProposal"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311001753340,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Query to Formula Field Proposal : sobjects/Apttus_Config2__ProductAttributeValue__c/describe"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "db11dcafe9f56146",
+          "flags": 1,
+          "operationName": "TopBundleRunner.Run",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311005696328,
+          "duration": 4032299,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311005696338,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing TopBundleRunner.Run."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311005696351,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getOptionGroupsForBundle"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311005696355,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGetOptionGroupsForBUndle"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311005696374,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id,Name,Apttus_Config2__ProductId__c, Apttus_Config2__OptionGroupId__r.Name, Apttus_Config2__OptionGroupId__r.Apttus_Config2__Label__c, Apttus_Config2__OptionGroupId__r.Apttus_Config2__Description__c, Apttus_Config2__OptionGroupId__c, Apttus_Config2__ParentOptionGroupId__c, Apttus_Config2__RootOptionGroupId__c, Apttus_Config2__RootSequence__c, Apttus_Config2__IsHidden__c, Apttus_Config2__IsLeaf__c, Apttus_Config2__MinOptions__c, Apttus_Config2__MaxOptions__c, Apttus_Config2__MinTotalQuantity__c, Apttus_Config2__MaxTotalQuantity__c, Apttus_Config2__MinTotalQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__MaxTotalQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__ModifiableType__c, Apttus_Config2__Sequence__c, Apttus_Config2__IsPicklist__c, Apttus_Config2__ContentType__c,Apttus_Config2__ProductAttributeGroupMemberId__r.Apttus_Config2__AttributeGroupId__c from Apttus_Config2__ProductOptionGroup__c where Apttus_Config2__ProductId__c in ('01t2D000003tTUkQAM') Order By Apttus_Config2__ParentOptionGroupId__c "
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311005696377,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "dd9344fd737cabc1",
+          "flags": 1,
+          "operationName": "getProductForOptionGroup",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "9edb67fc90bcb07b"
+            }
+          ],
+          "startTime": 1609311007249718,
+          "duration": 2478734,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311007249734,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getProductForOptionGroup."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311007253114,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getOptionsForOptionGroup"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311007253299,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Query to Get Options For Option Group : Select Id, Name, Apttus_Config2__ProductOptionGroupId__c , Apttus_Config2__AllowCloning__c, Apttus_Config2__AutoUpdateQuantity__c, Apttus_Config2__ConfigType__c, Apttus_Config2__Default__c,Apttus_Config2__DefaultQuantity__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__DefaultQuantityExpressionId__r.Id,Apttus_Config2__DefaultQuantityExpressionId__r.Name,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__EvaluationContext__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__ExpressionType__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__IsModifiable__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__SourceObject__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__UpdateField__c, Apttus_Config2__DefaultQuantityExpressionId__r.CurrencyIsoCode, Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__UpdateObject__c,Apttus_Config2__InclusionCriteria__c,Apttus_Config2__MinQuantity__c,Apttus_Config2__MaxQuantity__c, Apttus_Config2__MinQuantityExpressionId__r.Apttus_Config2__Expression__c,Apttus_Config2__MinQuantityExpressionId__r.Id, Apttus_Config2__MaxQuantityExpressionId__r.Apttus_Config2__Expression__c,Apttus_Config2__MaxQuantityExpressionId__r.Id, Apttus_Config2__ParentProductId__c,Apttus_Config2__Modifiable__c,Apttus_Config2__RelationshipType__c, Apttus_Config2__Required__c,Apttus_Config2__Sequence__c, Apttus_Config2__ComponentProductId__r.Id, Apttus_Config2__ComponentProductId__r.Name,Apttus_Config2__ComponentProductId__r.Description, Apttus_Config2__ComponentProductId__r.Apttus_Config2__ConfigurationType__c, Apttus_Config2__ComponentProductId__r.ProductCode, Apttus_Config2__ComponentProductId__r.Apttus_Config2__Version__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__Uom__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__HasAttributes__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__HasOptions__c,Apttus_Config2__ComponentProductId__r.IsActive, Apttus_Config2__ComponentProductId__r.Family from Apttus_Config2__ProductOptionComponent__c where Apttus_Config2__ProductOptionGroupId__c = 'a1C2D000000aQ1MUAU' and Apttus_Config2__ComponentProductId__r.IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311007258195,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGetOptionsForOG"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311007258320,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__ProductOptionGroupId__c , Apttus_Config2__AllowCloning__c, Apttus_Config2__AutoUpdateQuantity__c, Apttus_Config2__ConfigType__c, Apttus_Config2__Default__c,Apttus_Config2__DefaultQuantity__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__DefaultQuantityExpressionId__r.Id,Apttus_Config2__DefaultQuantityExpressionId__r.Name,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__EvaluationContext__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__ExpressionType__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__IsModifiable__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__SourceObject__c,Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__UpdateField__c, Apttus_Config2__DefaultQuantityExpressionId__r.CurrencyIsoCode, Apttus_Config2__DefaultQuantityExpressionId__r.Apttus_Config2__UpdateObject__c,Apttus_Config2__InclusionCriteria__c,Apttus_Config2__MinQuantity__c,Apttus_Config2__MaxQuantity__c, Apttus_Config2__MinQuantityExpressionId__r.Apttus_Config2__Expression__c,Apttus_Config2__MinQuantityExpressionId__r.Id, Apttus_Config2__MaxQuantityExpressionId__r.Apttus_Config2__Expression__c,Apttus_Config2__MaxQuantityExpressionId__r.Id, Apttus_Config2__ParentProductId__c,Apttus_Config2__Modifiable__c,Apttus_Config2__RelationshipType__c, Apttus_Config2__Required__c,Apttus_Config2__Sequence__c, Apttus_Config2__ComponentProductId__r.Id, Apttus_Config2__ComponentProductId__r.Name,Apttus_Config2__ComponentProductId__r.Description, Apttus_Config2__ComponentProductId__r.Apttus_Config2__ConfigurationType__c, Apttus_Config2__ComponentProductId__r.ProductCode, Apttus_Config2__ComponentProductId__r.Apttus_Config2__Version__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__Uom__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__HasAttributes__c, Apttus_Config2__ComponentProductId__r.Apttus_Config2__HasOptions__c,Apttus_Config2__ComponentProductId__r.IsActive, Apttus_Config2__ComponentProductId__r.Family from Apttus_Config2__ProductOptionComponent__c where Apttus_Config2__ProductOptionGroupId__c = 'a1C2D000000aQ1MUAU' and Apttus_Config2__ComponentProductId__r.IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311007258324,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311008597722,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->SELECT Id,Apttus_Config2__ConditionScope__c, Apttus_Config2__ConditionExpression__c, Apttus_Config2__EvaluationContext__c, Apttus_Config2__ExpressionType__c,Apttus_Config2__Expression__c,Apttus_Config2__GroupByField__c, Apttus_Config2__IsModifiable__c, Apttus_Config2__ProductId__c, Apttus_Config2__Operation__c, Apttus_Config2__ProductGroup__c, Apttus_Config2__ParentField__c, Apttus_Config2__SourceObject__c, Apttus_Config2__UpdateField__c, Apttus_Config2__UpdateObject__c, Name from Apttus_Config2__FieldExpression__c WHERE Apttus_Config2__ProductId__c in ('01t2D000003tTUpQAM','01t2D000003tTUuQAM','01t2D000003tTUzQAM') and Apttus_Config2__Active__c = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311008597726,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "9edb67fc90bcb07b",
+          "flags": 1,
+          "operationName": "populateOptionGroupForBundle",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "db11dcafe9f56146"
+            }
+          ],
+          "startTime": 1609311007193544,
+          "duration": 2535061,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311007193559,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing populateOptionGroupForBundle."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "ecd6bc09740c06f3",
+          "flags": 1,
+          "operationName": "getProductGroupData",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311013845788,
+          "duration": 1551332,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311013845811,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getProductGroupData."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311013845843,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductGroups"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311013845896,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->SELECT Apttus_Config2__ProductGroupId__c, Apttus_Config2__ProductGroupId__r.Name, Apttus_Config2__ProductGroupId__r.Apttus_Config2__Description__c, Apttus_Config2__ProductId__c, Apttus_Config2__ProductId__r.Name, Apttus_Config2__Sequence__c from Apttus_Config2__ProductGroupMember__c WHERE Apttus_Config2__ProductId__c in ('01t2D000003tTUzQAM','01t2D000003tTUpQAM','01t2D000003tTUuQAM','01t2D000003tTUkQAM') and Apttus_Config2__ProductId__r.IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311013845902,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "2d4b51553c8ed3e2",
+          "flags": 1,
+          "operationName": "getAllProductsForFamilies",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311015549990,
+          "duration": 64,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311015550019,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductsForFamilies."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311015550041,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductsForFamilies"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "a3139e2a43912560",
+          "flags": 1,
+          "operationName": "populateExtProductFamilies",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311022711657,
+          "duration": 1173237,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311022711668,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing populateExtProductFamilies."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311022711742,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getProductsForExtFamilies"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311022711769,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGetTopProducts"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311022711873,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id,Name,IsActive,ProductCode,Description,Family,Apttus_Config2__ConfigurationType__c,Apttus_Config2__EffectiveDate__c, Apttus_Config2__ExpirationDate__c,Apttus_Config2__HasAttributes__c,Apttus_Config2__HasDefaults__c,Apttus_Config2__HasOptions__c,Apttus_Config2__ProductType__c, Apttus_Config2__Uom__c,Apttus_Config2__Version__c, Apttus_Config2__Customizable__c, (Select Apttus_Config2__PriceListId__c from Apttus_Config2__PriceLists__r) from Product2 where Family in ('Auto test family','Auto_Config_PF_ 12231','Auto_Config_BundleB1_DS','Auto_Config_PF_ General','product family','win13 cpq')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311022711880,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "0134ba169bf6df13",
+          "flags": 1,
+          "operationName": "getAllProductAttributeGroups",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311031490529,
+          "duration": 413,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311031490589,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductAttributeGroups."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031490657,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAttributeData"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031490895,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getSObjectDetails"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "bfd19cd0a8f618ce",
+          "flags": 1,
+          "operationName": "populateAttributeRules",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311031491188,
+          "duration": 3836039,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311031491217,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing populateAttributeRules."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031491283,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductAttributeCondRules"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031491365,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->select Id, Apttus_Config2__ProductAttributeRuleId__r.Name,Apttus_Config2__ProductAttributeRuleId__r.Id,Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ConditionCriteriaExpression__c, Apttus_Config2__ActionCriteriaExpression__c, Apttus_Config2__Field__c,Apttus_Config2__Action__c, Apttus_Config2__ValueExpression__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductFamilyScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductGroupScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__EffectiveDate__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ExpirationDate__c from Apttus_Config2__ProductAttributeRuleAction__c Where Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductScope__c INCLUDES ('01t2D000003tTUzQAM','01t2D000003tTUpQAM','01t2D000003tTUuQAM','01t2D000003tTUkQAM','All') order by Apttus_Config2__ProductAttributeRuleId__r.Id"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031491379,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031503844,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->select Id, Apttus_Config2__ProductAttributeRuleId__r.Name,Apttus_Config2__ProductAttributeRuleId__r.Id,Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ConditionCriteriaExpression__c, Apttus_Config2__ActionCriteriaExpression__c, Apttus_Config2__Field__c,Apttus_Config2__Action__c, Apttus_Config2__ValueExpression__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductFamilyScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductGroupScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__EffectiveDate__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ExpirationDate__c from Apttus_Config2__ProductAttributeRuleAction__c Where Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductGroupScope__c INCLUDES ('All') order by Apttus_Config2__ProductAttributeRuleId__r.Id"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031503857,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031508490,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->select Id, Apttus_Config2__ProductAttributeRuleId__r.Name,Apttus_Config2__ProductAttributeRuleId__r.Id,Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ConditionCriteriaExpression__c, Apttus_Config2__ActionCriteriaExpression__c, Apttus_Config2__Field__c,Apttus_Config2__Action__c, Apttus_Config2__ValueExpression__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductFamilyScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductGroupScope__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__EffectiveDate__c, Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ExpirationDate__c from Apttus_Config2__ProductAttributeRuleAction__c Where Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductAttributeRuleId__r.Apttus_Config2__ProductFamilyScope__c INCLUDES ('All') order by Apttus_Config2__ProductAttributeRuleId__r.Id"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031508505,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311033652546,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductAttributeRuleActions"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311033652576,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->select Id ,Name,Apttus_Config2__Field__c,Apttus_Config2__Action__c, Apttus_Config2__ValueExpression__c, Apttus_Config2__ProductAttributeRuleId__c from Apttus_Config2__ProductAttributeRuleAction__c where Apttus_Config2__ProductAttributeRuleId__c In ('a512D0000001UjKQAU','a512D0000001UjFQAU','a512D0000001YCBQA2','a512D0000001YCQQA2','a512D0000008wjeQAA','a512D0000008wjfQAA','a512D0000001NXwQAM','a512D0000001NY1QAM','a512D0000001NY6QAM','a512D0000001NYBQA2','a512D0000001NYGQA2','a512D0000001NYQQA2','a512D0000001NYVQA2','a512D0000001NYaQAM','a512D0000001NYfQAM','a512D0000001NYuQAM','a512D0000001O5VQAU','a512D0000001RFpQAM','a512D0000001RFuQAM','a512D0000001RFzQAM','a512D0000001RG4QAM','a512D0000001RG9QAM','a512D0000001UjPQAU','a512D0000001YC1QAM','a512D0000001YCVQA2','a512D0000008wjhQAA','a512D0000008wjiQAA','a512D0000008wjjQAA','a512D0000008wjkQAA','a512D0000008wjlQAA','a512D0000008wjmQAA','a512D0000008wjoQAA','a512D0000008wjpQAA','a512D0000008wjqQAA','a512D0000008wjrQAA','a512D0000008wjsQAA','a512D0000008wjyQAA','a512D0000008wjzQAA','a512D0000008wk0QAA','a512D0000008wk1QAA','a512D0000008wk3QAA','a512D0000008wk4QAA','a512D0000008wkBQAQ','a512D0000008wkCQAQ','a512D0000008wkDQAQ','a512D0000008wkHQAQ','a512D0000008wkIQAQ','a512D0000008wkJQAQ','a512D0000008wkdQAA','a512D0000008wkmQAA','a512D0000008wknQAA','a512D0000008wkoQAA','a512D0000008wkpQAA','a512D0000008wkqQAA','a512D0000008wkrQAA','a512D0000008wt9QAA','a512D0000008wtEQAQ','a512D0000008wtJQAQ','a512D0000008wtOQAQ','a512D0000008wtTQAQ','a512D0000008wtYQAQ','a512D0000008wtdQAA','a512D0000008wtiQAA','a512D0000008wtnQAA','a512D0000008wtsQAA','a512D0000008wtxQAA','a512D0000008wu2QAA','a512D0000008wu7QAA','a512D0000008wxGQAQ','a512D0000008wxLQAQ','a512D0000008zitQAA')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311033652579,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "70489fd829add0da",
+          "flags": 1,
+          "operationName": "populateConditionsForAttributeValueMatrixRule",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311035327341,
+          "duration": 1108692,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311035327347,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing populateConditionsForAttributeValueMatrixRule."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311035327351,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Get All Product Attribute Value Matrix Rules for Products : 5"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311035327359,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getAllProductAttributeValueMatrixRules"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311035327411,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->select Apttus_Config2__Columns__c, Apttus_Config2__Keys__c, Apttus_Config2__ProductAttributeScope__c, Apttus_Config2__Hash__c, Apttus_Config2__ProductId__c, Apttus_Config2__AttributeValueMatrixId__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__AccountScope__c, Apttus_Config2__AttributeValueMatrixId__r.Id, Apttus_Config2__AttributeValueMatrixId__r.Name, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__ProductScope__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__ProductGroupScope__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__ProductFamilyScope__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__ApplicationType__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__Active__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__EffectiveDate__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__ExpirationDate__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__Description__c, Apttus_Config2__AttributeValueMatrixId__r.Apttus_Config2__TreatNullAsWildcard__c from Apttus_Config2__ProductAttributeMatrixView__c Where Apttus_Config2__ProductId__c In ('01t2D000003tTUzQAM','01t2D000003tTUpQAM','01t2D000003tTUuQAM','01t2D000003tTUkQAM')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311035327414,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "55b250b3d7124f5f",
+          "flags": 1,
+          "operationName": "generateModel",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "322e9346b87def0b"
+            }
+          ],
+          "startTime": 1609311036436292,
+          "duration": 3333463,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311036436316,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateModel."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311036720302,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Started compiling offering : 01t2D000003tTUkQAM"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311036889951,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Completed compiling offering : 01t2D000003tTUkQAM"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311036889991,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.API.CommonClass"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing insertOrUpdateBlobUsingMongoDB..."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311039769704,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.API.Controllers.PublishController"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Successfully saved the offering to database."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311039769746,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Completed generateModel for offering : 01t2D000003tTUkQAM"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "fa3b4b9ed505107f",
+          "flags": 1,
+          "operationName": "publishProduct",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "1d748764181521c4"
+            }
+          ],
+          "startTime": 1609310996418675,
+          "duration": 43351217,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609310996418744,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing publishProduct."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310996419026,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getBundleDetail"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310996419166,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Query to Get Offering Detail : Select Id, Name from Product2 where Id = '01t2D000003tTUkQAM'"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310996419187,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name from Product2 where Id = '01t2D000003tTUkQAM'"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310996419195,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310997843266,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getProductsAssociatedToBundle"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310997843272,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Query to Get Top Product Info : Select Id,Name,IsActive,ProductCode,Description,Family,Apttus_Config2__ConfigurationType__c,Apttus_Config2__EffectiveDate__c, Apttus_Config2__ExpirationDate__c,Apttus_Config2__HasAttributes__c,Apttus_Config2__HasDefaults__c,Apttus_Config2__HasOptions__c,Apttus_Config2__ProductType__c, Apttus_Config2__Uom__c,Apttus_Config2__Version__c, Apttus_Config2__Customizable__c, (Select Apttus_Config2__PriceListId__c from Apttus_Config2__PriceLists__r) from Product2 where ID in ('01t2D000003tTUkQAM') and IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310997843274,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGetTopProducts"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310997843319,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id,Name,IsActive,ProductCode,Description,Family,Apttus_Config2__ConfigurationType__c,Apttus_Config2__EffectiveDate__c, Apttus_Config2__ExpirationDate__c,Apttus_Config2__HasAttributes__c,Apttus_Config2__HasDefaults__c,Apttus_Config2__HasOptions__c,Apttus_Config2__ProductType__c, Apttus_Config2__Uom__c,Apttus_Config2__Version__c, Apttus_Config2__Customizable__c, (Select Apttus_Config2__PriceListId__c from Apttus_Config2__PriceLists__r) from Product2 where ID in ('01t2D000003tTUkQAM') and IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310997843321,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311004011388,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->SELECT Id,Apttus_Config2__ConditionScope__c, Apttus_Config2__ConditionExpression__c, Apttus_Config2__EvaluationContext__c, Apttus_Config2__ExpressionType__c,Apttus_Config2__Expression__c,Apttus_Config2__GroupByField__c, Apttus_Config2__IsModifiable__c, Apttus_Config2__ProductId__c, Apttus_Config2__Operation__c, Apttus_Config2__ProductGroup__c, Apttus_Config2__ParentField__c, Apttus_Config2__SourceObject__c, Apttus_Config2__UpdateField__c, Apttus_Config2__UpdateObject__c, Name from Apttus_Config2__FieldExpression__c WHERE Apttus_Config2__ProductId__c in ('01t2D000003tTUkQAM') and Apttus_Config2__Active__c = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311004011392,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "322e9346b87def0b",
+          "flags": 1,
+          "operationName": "innerPublishProduct",
+          "references": [
+            {
+              "refType": "CHILD_OF",
+              "traceID": "1d748764181521c4",
+              "spanID": "fa3b4b9ed505107f"
+            }
+          ],
+          "startTime": 1609311005696083,
+          "duration": 34073725,
+          "tags": [
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609311005696111,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing innerPublishProduct."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311015550140,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getConstraintRuleConditions"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311015550162,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Apttus_Config2__ConstraintRuleId__c FROM Apttus_Config2__ConstraintRuleCondition__c where Apttus_Config2__ConstraintRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductId__c in ('01t2D000003tTUzQAM','01t2D000003tTUpQAM','01t2D000003tTUuQAM','01t2D000003tTUkQAM') ORDER BY Apttus_Config2__Sequence__C"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311015550166,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311016642358,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__ConstraintRuleId__c, Apttus_Config2__ProductFamily__c, Apttus_Config2__ProductGroupId__c, Apttus_Config2__ProductId__c, Apttus_Config2__ProductScope__c,Apttus_Config2__MatchInAsset__c, Apttus_Config2__MatchInOptions__c, Apttus_Config2__MatchInPrimaryLines__c, Apttus_Config2__MatchMaxProducts__c, Apttus_Config2__MatchInCartOptions__c, Apttus_Config2__MatchInLocation__c, Apttus_Config2__MatchInRelatedLines__c, Apttus_Config2__MatchRule__c, Apttus_Config2__ConditionCriteria__c, Apttus_Config2__MatchMinProducts__c, Apttus_Config2__Sequence__c, Apttus_Config2__ProductFieldA__c, Apttus_Config2__ProductFieldB__c, Apttus_Config2__ProductFieldC__c, Apttus_Config2__ProductFieldD__c, Apttus_Config2__ProductFieldValueA__c, Apttus_Config2__ProductFieldValueB__c,Apttus_Config2__ProductFieldValueC__c,Apttus_Config2__ProductFieldValueD__c FROM Apttus_Config2__ConstraintRuleCondition__c where Apttus_Config2__ConstraintRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ConstraintRuleId__c in ('a0W2D000002F2agUAC','a0W2D000002F2FrUAK') ORDER BY Apttus_Config2__Sequence__C"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311016642367,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311017735349,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getConstraintRuleForProductFieldSet"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311017735435,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__ConstraintRuleId__c, Apttus_Config2__ProductFamily__c, Apttus_Config2__ProductGroupId__c, Apttus_Config2__ProductId__c, Apttus_Config2__ProductScope__c,Apttus_Config2__MatchInAsset__c, Apttus_Config2__MatchInOptions__c, Apttus_Config2__MatchInPrimaryLines__c, Apttus_Config2__MatchMaxProducts__c, Apttus_Config2__MatchInCartOptions__c, Apttus_Config2__MatchInLocation__c, Apttus_Config2__MatchRule__c, Apttus_Config2__ConditionCriteria__c, Apttus_Config2__MatchMinProducts__c, Apttus_Config2__Sequence__c, Apttus_Config2__ProductFieldA__c, Apttus_Config2__ProductFieldB__c, Apttus_Config2__ProductFieldC__c, Apttus_Config2__ProductFieldD__c, Apttus_Config2__ProductFieldValueA__c, Apttus_Config2__ProductFieldValueB__c,Apttus_Config2__ProductFieldValueC__c,Apttus_Config2__ProductFieldValueD__c ,Apttus_Config2__ProductFieldOperatorA__c, Apttus_Config2__ProductFieldOperatorB__c, Apttus_Config2__ProductFieldOperatorC__c, Apttus_Config2__ProductFieldOperatorD__c FROM Apttus_Config2__ConstraintRuleCondition__c where Apttus_Config2__ConstraintRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductFieldValueA__c in ('CMS_B_P1_02','CMS_B_P1','CMS_B_P1_03','CMS_B_P1_01')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311017735440,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311017746763,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__ConstraintRuleId__c, Apttus_Config2__ProductFamily__c, Apttus_Config2__ProductGroupId__c, Apttus_Config2__ProductId__c, Apttus_Config2__ProductScope__c,Apttus_Config2__MatchInAsset__c, Apttus_Config2__MatchInOptions__c, Apttus_Config2__MatchInPrimaryLines__c, Apttus_Config2__MatchMaxProducts__c, Apttus_Config2__MatchInCartOptions__c, Apttus_Config2__MatchInLocation__c, Apttus_Config2__MatchRule__c, Apttus_Config2__ConditionCriteria__c, Apttus_Config2__MatchMinProducts__c, Apttus_Config2__Sequence__c, Apttus_Config2__ProductFieldA__c, Apttus_Config2__ProductFieldB__c, Apttus_Config2__ProductFieldC__c, Apttus_Config2__ProductFieldD__c, Apttus_Config2__ProductFieldValueA__c, Apttus_Config2__ProductFieldValueB__c,Apttus_Config2__ProductFieldValueC__c,Apttus_Config2__ProductFieldValueD__c ,Apttus_Config2__ProductFieldOperatorA__c, Apttus_Config2__ProductFieldOperatorB__c, Apttus_Config2__ProductFieldOperatorC__c, Apttus_Config2__ProductFieldOperatorD__c FROM Apttus_Config2__ConstraintRuleCondition__c where Apttus_Config2__ConstraintRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ProductFieldB__c = 'ProductCode'"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311017746769,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311019147754,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getConstraintRuleActions"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311019147781,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__ConstraintRuleId__c , Apttus_Config2__ProductFamily__c,Apttus_Config2__ActionCriteria__c, Apttus_Config2__ProductGroupId__c, Apttus_Config2__IncludeMatchRule__c, Apttus_Config2__RepeatInclusion__c,Apttus_Config2__ProductCategory__c,Apttus_Config2__IncludeMinProducts__c, Apttus_Config2__IncludeMaxProducts__c, Apttus_Config2__AutoExclude__c, Apttus_Config2__ActionIntent__c, Apttus_Config2__ProductId__c, Apttus_Config2__ActionDisposition__c, Apttus_Config2__ProductScope__c,Apttus_Config2__MatchInAsset__c, Apttus_Config2__MatchInOptions__c, Apttus_Config2__MatchInPrimaryLines__c, Apttus_Config2__MatchInCartOptions__c, Apttus_Config2__Sequence__c, Apttus_Config2__Message__c, Apttus_Config2__ActionType__c FROM Apttus_Config2__ConstraintRuleAction__c where Apttus_Config2__ConstraintRuleId__r.Apttus_Config2__Active__c = true and Apttus_Config2__ConstraintRuleId__r.Id in ('a0W2D000002F2agUAC','a0W2D000002F2FrUAK','a0W2D000000d458UAA','a0W2D000000d41nUAA','a0W2D000000d3zQUAQ','a0W2D000000d45MUAQ','a0W2D000000d41xUAA','a0W2D000000d3pqUAA','a0W2D000000d3sAUAQ','a0W2D000000d3sFUAQ','a0W2D000000d3oBUAQ','a0W2D000000d3oFUAQ','a0W2D000000d478UAA','a0W2D000000d3rKUAQ','a0W2D000000d41uUAA','a0W2D000000d3PiUAI','a0W2D000000d3kmUAA','a0W2D000000d3knUAA','a0W2D000000d428UAA','a0W2D000000nuOMUAY')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311019147784,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311020517755,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->SELECT Id, Name, Apttus_Config2__ConstraintRuleActionId__c, Apttus_Config2__FieldExpressionId__c, Apttus_Config2__FieldExpressionId__r.Id, Apttus_Config2__FieldExpressionId__r.Name, Apttus_Config2__FieldExpressionId__r.CurrencyIsoCode, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__Expression__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__UpdateField__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__EvaluationContext__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__ExpressionType__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__IsModifiable__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__SourceObject__c, Apttus_Config2__FieldExpressionId__r.Apttus_Config2__UpdateObject__c FROM Apttus_Config2__ConstraintRuleActionExpression__c where Apttus_Config2__ConstraintRuleActionId__c in ('a0U2D000000MZyOUAW','a0U2D000000MZyPUAW','a0U2D000000MZnoUAG','a0U2D000000MZfCUAW','a0U2D000000MZhvUAG','a0U2D000000epRuUAI')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311020517760,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311021596291,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Getting Product Groups from External Product Group Ids : 5"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311021596403,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getExternalProductGroups"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311021596419,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->SELECT Apttus_Config2__ProductGroupId__c, Apttus_Config2__ProductGroupId__r.Name, Apttus_Config2__ProductGroupId__r.Apttus_Config2__Description__c, Apttus_Config2__ProductId__c, Apttus_Config2__ProductId__r.Name, Apttus_Config2__Sequence__c from Apttus_Config2__ProductGroupMember__c WHERE Apttus_Config2__ProductGroupId__c in ('a182D000000RjuGQAS','a182D000000RkBLQA0','a182D000000Rk00QAC','a182D000000RkBNQA0','a182D000000RjyQQAS') and Apttus_Config2__ProductId__r.IsActive = true"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311021596422,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311022711533,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Getting Products from External Product Family Ids : 6"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311023885009,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Time to Populate External Families : 1173.8421"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311023885219,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing getConstraintRules"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311023885249,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing SfdcGET Query-->Select Id, Name, Apttus_Config2__Description__c, Apttus_Config2__ConditionAssociation__c, Apttus_Config2__Sequence__c, Apttus_Config2__Active__c, Apttus_Config2__EffectiveDate__c, Apttus_Config2__ExpirationDate__c, Apttus_Config2__IsBundleContext__c FROM Apttus_Config2__ConstraintRule__c WHERE Apttus_Config2__Active__c=true and Id in ('a0W2D000002F2agUAC','a0W2D000002F2FrUAK','a0W2D000000d458UAA','a0W2D000000d41nUAA','a0W2D000000d3zQUAQ','a0W2D000000d45MUAQ','a0W2D000000d41xUAA','a0W2D000000d3pqUAA','a0W2D000000d3sAUAQ','a0W2D000000d3sFUAQ','a0W2D000000d3oBUAQ','a0W2D000000d3oFUAQ','a0W2D000000d478UAA','a0W2D000000d3rKUAQ','a0W2D000000d41uUAA','a0W2D000000d3PiUAI','a0W2D000000d3kmUAA','a0W2D000000d3knUAA','a0W2D000000d428UAA','a0W2D000000nuOMUAY')"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311023885253,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031489629,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Skipped Rules due to Empty Actions : a0W2D000000d3pqUAA','a0W2D000000d3PiUAI"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311031489734,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Skipped Rules due to Empty Condtions : a0W2D000000d3pqUAA','a0W2D000000d3PiUAI"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311035327329,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.StructurePublisher"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Populate Attribute Value Matrix Rules"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        },
+        {
+          "traceID": "1d748764181521c4",
+          "spanID": "1d748764181521c4",
+          "flags": 1,
+          "operationName": "POST /cmspublish/api/cpqconfigpublisher/publishBundle",
+          "references": [],
+          "startTime": 1609310994860223,
+          "duration": 44912487,
+          "tags": [
+            {
+              "key": "Apttus.TenantId",
+              "type": "string",
+              "value": "00D2D0000008aVW123"
+            },
+            {
+              "key": "Apttus.UserId",
+              "type": "string",
+              "value": "qa-automation@28demo.com.cms1"
+            },
+            {
+              "key": "request_id",
+              "type": "string",
+              "value": "6acd0620-557b-4356-be5f-2824d3cd73e7"
+            },
+            {
+              "key": "OperationId",
+              "type": "string",
+              "value": "6acd0620-557b-4356-be5f-2824d3cd73e7"
+            },
+            {
+              "key": "Component",
+              "type": "string",
+              "value": "ConfigPublisherAPITracer"
+            },
+            {
+              "key": "sampler.type",
+              "type": "string",
+              "value": "const"
+            },
+            {
+              "key": "sampler.param",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "HttpUrl",
+              "type": "string",
+              "value": "http://localhost:9184/cmspublish/api/cpqconfigpublisher/publishBundle"
+            },
+            {
+              "key": "HttpMethod",
+              "type": "string",
+              "value": "POST"
+            },
+            {
+              "key": "StatusCode",
+              "type": "int64",
+              "value": 200
+            },
+            {
+              "key": "Success",
+              "type": "bool",
+              "value": true
+            },
+            {
+              "key": "internal.span.format",
+              "type": "string",
+              "value": "proto"
+            }
+          ],
+          "logs": [
+            {
+              "timestamp": 1609310994866217,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.API.Controllers.PublishController"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "SfdcOrgId : 00D2D0000008aVW, sfdcUserName : qa-automation@28demo.com.cms1, sfdcSessionId : , sfdcUserId : , sfdcInstanceURL : https://apttus--cms1.my.salesforce.com, nsPrefix : Apttus_Config2__"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310994866247,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.API.Controllers.PublishController"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing Publish Bundle for BundleIdsApttusPublisher.API.Controllers.Hierarchy"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310994867022,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Executing generateAuthToken."
+                }
+              ]
+            },
+            {
+              "timestamp": 1609310996411619,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.SFDC.API.SOQLApi"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "session Id : 00D2D0000008aVW!AQQAQMTbV8ZZT63Kz2.MI.N6ZovZFYEugRlQLA_JLOmQ7nMr7hR_hfevClmaalqXITaTpxoJW0TW7Rv2r77x75fJQN.hPcYZ"
+                }
+              ]
+            },
+            {
+              "timestamp": 1609311039770007,
+              "fields": [
+                {
+                  "key": "event",
+                  "type": "string",
+                  "value": "log"
+                },
+                {
+                  "key": "category",
+                  "type": "string",
+                  "value": "ApttusPublisher.API.Controllers.PublishController"
+                },
+                {
+                  "key": "level",
+                  "type": "string",
+                  "value": "Information"
+                },
+                {
+                  "key": "message",
+                  "type": "string",
+                  "value": "Time Taken by publishBundle 00:00:44.9035814"
+                }
+              ]
+            }
+          ],
+          "processID": "p1",
+          "warnings": null
+        }
+      ],
+      "processes": {
+        "p1": {
+          "serviceName": "ConfigPublisherAPITracer-local",
+          "tags": [
+            {
+              "key": "hostname",
+              "type": "string",
+              "value": "L005432"
+            },
+            {
+              "key": "ip",
+              "type": "string",
+              "value": "192.168.1.10"
+            },
+            {
+              "key": "jaeger.version",
+              "type": "string",
+              "value": "CSharp-0.3.7.0"
+            }
+          ]
+        }
+      },
+      "warnings": null
+    }
+  ],
+  "total": 0,
+  "limit": 0,
+  "offset": 0,
+  "errors": null
+}

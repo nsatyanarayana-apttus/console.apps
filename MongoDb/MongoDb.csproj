@@ -9,4 +9,10 @@
     <PackageReference Include="MongoDB.Driver" Version="2.11.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="JsonData\tracer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

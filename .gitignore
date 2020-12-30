@@ -33,3 +33,4 @@
 /MongoDb/obj
 /MongoDb/bin/Debug/netcoreapp3.1
 /SchedularPoc/.vs/SchedularPoc/DesignTimeBuild/.dtbcache.v2
+/MongoDb/.vs/MongoDb/DesignTimeBuild
